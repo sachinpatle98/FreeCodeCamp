@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="survey.css">
+<h1 id="title">
+   Survey Form
+</h1>
+<p id="description">
+    Thank you for taking the time to help us improve the platform
+</p>
+
+<div class="box-container">
+  <div class="teal-box">
+<form id="survey-form">
+  <div class="form-group">
+       <label id="name-label" for="name">Name</label>
+    <br>
+    <input type="text" id="name" placeholder="Name" required>
+  </div>
+  <div>
+  <label id="email-label" for="email">Email</label>
+    <br>
+  <input type="email" id="email" placeholder="Email" required>
+  </div>
+ <label id="number-label" for="number">Number</label>
+    <br>
+  <input type="number" id="number" placeholder="Number" min="1" max="10" size="10" required>
+  <br>
+   <label id="dropdown" for="subject">Which option best describes your current role?</label>
+      <br>
+   <select id="dropdown">
+     <option value="1">Student</option>
+     <option value="2">Full Time Job</option>  
+     <option value="3">Full Time Learner</option>
+     <option value="4">Part Time Job</option>
+     <option value="5">Prefer not to say</option>
+     <option value="6">Other</option>
+  </select>
+  <br>
+  <div class="radio">
+  <label id="feature" for="plays" name="feature-choice">Would you recommend freeCodeCamp to a friend?</label> 
+  <br>
+  <p><input id="feature" type="radio" name="feature-choice" value="Definitely">Definitely</> 
+    <br>
+  <input id="feature" type="radio" name="feature-choice" value="Maybe">Maybe</> 
+    <br>
+  <input id="feature" type="radio" name="feature-choice" value="Not sure">Not sure</></p>
+</div>
+  <div class="checkbox">
+    <label id="field" for="field" name="field-choice">What would you like to see improved? (Check all that apply)</label>
+    <br>
+    <p><input id="field" type="checkbox" name="field" value="Front-end Projects">Front-end Projects</>
+      <br>
+      <input id="field" type="checkbox" name="field" value="Back-end Projects">Back-end Projects</>
+    <br>
+  <input id="field" type="checkbox" name="field" value="Data Visualization">Data Visualization</>
+  <br>
+   <input id="field" type="checkbox" name="field" value="Challenges">Challenges</>
+    <br>
+    <input id="field" type="checkbox" name="field" value="Open Source Community">Open Source Community</>
+    <br>
+  <input id="field" type="checkbox" name="field" value="Gitter help rooms">Gitter help rooms</>
+    <br>
+  <input id="field" type="checkbox" name="field" value="Videos">Videos</>
+  <br>
+  <input id="field" type="checkbox" name="field" value="Wiki">Wiki</>
+  <br>
+  <input id="field" type="checkbox" name="field" value="Forum">Forum</>
+  <br>
+  <input id="field" type="checkbox" name="field" value="Additional Courses">Additional Courses</>
+  </p>
+  </div>
+
+<div>
+    <p>Any comments or suggestions?</p>
+  <textarea name="comment">Enter your comment here...</textarea>
+<br>
+    <button id="submit" type="submit">Submit</button>
+<br>     
+<h2>Thank you for taking the time to provide feedback!</h2>
+</form>
+  </div>
+  </div>
+
+  </html>

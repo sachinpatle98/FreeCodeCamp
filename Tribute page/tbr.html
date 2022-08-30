@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="tbr.css">
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    font-size: 17px;
+    background-color: #111;
+    color: #fff;
+}
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+    margin-top: 50px; 
+
+}
+
+p{
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
+}
+
+details{
+    width: 100%;
+    font-family: sans-serif;
+    border: 2px solid violet;
+    padding: 5px;
+} */
+ details p{
+    padding: 20px;
+    color: #000;
+    background: #fff;
+} 
+
+ summary{
+    padding: 20px;
+    background-color: yellowgreen;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+}
+
+section{
+    max-width: 80%;
+    width: 100%;
+}
+
+a{
+    color: rgb(47 , 161 , 236) ;
+    text-decoration: none;
+}
+
+h3{
+    margin: 10px;
+}
+
+#image{
+    width: 100%;
+     height: auto;
+    max-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid rgb(223, 152, 21);
+    box-shadow: 0px 0px 15px 10px #272525; 
+}
+
+figcaption{
+    margin: 20px;
+    font-size: 20px;
+    width: 55%;
+}
+
+#title{
+    color: orange;
+}
+
+#tribute-info{
+    width: 50%;
+}
+
+@media screen and (max-width:600px){
+    
+    figcaption{
+        width: 80%;
+        font-size: 15px;
+    }
+    #tribute-info{
+        width: 100%;
+    }
+}   
+
+</style>
+<body>
+    <center>
+        <main id="main"></main>
+        <h1 id="title">Dr. APJ Abdul Kalam</h1>
+        <p>Missile Man & President Of India</p>
+                <div class="image-div">
+                    <figure>
+                    <img src="/Tribute page/Dr-APJ-Abdul-Kalam.jpg" id="image" width="200" height="200"  alt="tribute>"
+     <figcaption id="img-caption"><p><b>A.P.J Abdul Kalam</b> in full Avul Pakir Jainulabdeen Abdul Kalam, (born October 15, 1931, Rameswaram, India—died July 27, 2015, Shillong)</p></figcaption>
+                </figure>
+                </div>
+                <section id="tribute-info">
+                    <details>
+                        <summary>What is A.P.J Abdul Kalam known for?</summary>
+                        <p>Avul Pakir Jainelabdeen Abdul Kalam was the 11th President of the country from 2002 and 2007 and is also popularly known as the 'Missile Man' of India. Born in a poor family in Tamil Nadu's Rameswaram, Kalam went on to study physics and aerospace engineering and worked with Defence Research and Development Organisation (DRDO) and Indian Space Research Organisation (ISRO)</p>
+                    </details>
+                    <details>
+                    <summary>What organization was Dr. A.P.J Abdul Kalam associated with? </summary>
+                    <p>
+                        A.P.J Abdul Kalam joined as a scientist in the aeronautical development establishment of DRDO in 1960, after graduation. His career started with him designing a small hovercraft. However, he was not convinced by his choice of a job at the DRDO. Kalam was transferred to ISRO in 1969, where he was the project director of India's first satellite vehicle launch. The satellite vehicle deployed the Rohini satellite successfully in near-Earth orbit in July 1980. Kalam received the Government's LV and Slv projects between the 1970s-90s. He directed two projects like Project Devil and Project Valiant, which aimed at developing ballistic missiles from the successful SLV program's technology Kalam somehow convinced Indira Gandhi and sought secret funds for these aerospace projects. His research and immense knowledge brought him and the nation great laurels in the 1980s.
+                    </p>
+                </details>
+                <h3>
+                    Read more About "Dr A.P.J ABDUL KALAM"
+                    <a id="tribut-link" href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">'wikipedia'</a>
+                </h3>
+                </section>
+    </center>
+</body>
+</html>
